@@ -319,24 +319,20 @@ body {
 }
 
 .quick-add {
-    background: linear-gradient(135deg, #57e24a, #50c9ce); /* mesmo gradiente do .btn */
+    background-color: #4a4a4a;
     color: #fff;
     border: none;
     padding: 0.8rem 2rem;
     font-size: 0.9rem;
     font-weight: 600;
-    border-radius: 12px; /* igual ao botão .btn */
+    border-radius: 50px;
     cursor: pointer;
     text-transform: uppercase;
-    opacity: 1; /* sempre visível */
-    transform: translateY(0);
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(74,144,226,0.3); /* efeito sutil */
-}
-
-.quick-add:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(74,144,226,0.4); /* mesmo efeito do .btn:hover */
+    
+    /* Faz o botão ficar invisível por padrão */
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .product-card:hover .quick-add {
@@ -362,7 +358,7 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-weight: 400;
     font-size: 1.1rem;
-    color: #000000;
+    color: #333;
     margin-bottom: 0.5rem;
 }
 
@@ -370,7 +366,7 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-weight: 500;
     font-size: 1.2rem;
-    color: #fa2424;
+    color: #4CAF50;
 }
 
 @media (max-width: 600px) {

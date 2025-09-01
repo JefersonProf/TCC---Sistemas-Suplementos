@@ -21,6 +21,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
+
+
+
+
+<script>
   // Scroll reveal nos produtos
   const featuredItems = document.querySelectorAll(".featured-item");
 
@@ -36,4 +45,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
   window.addEventListener("scroll", revealOnScroll);
   window.addEventListener("load", revealOnScroll);
-
+</script>
