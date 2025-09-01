@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto - Nome do Produto</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+      <header class="navbar">
+        <div class="logo">
+            <a href="#">SuaMarca</a>
+        </div>
+
+        <form class="search-form">
+            <input type="text" placeholder="Pesquisar produtos...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="produto-detalhe.html">Produtos</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        
+        <div class="user-actions">
+            <a href="#login" class="user-action-link">
+                <i class="fas fa-user-circle"></i>
+                <span class="action-text">Login</span>
+            </a>
+            <a href="#carrinho" class="user-action-link bag-link">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="action-text">Sacola</span>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+        
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+      
+
+   <main class="main-content">
+    <h1 class="page-title products-page-title">Produtos</h1>
+    
+    <div class="filters-bar">
+        <div class="filter-item">
+            <span>Ordenar por:</span>
+            <select class="sort-select">
+                <option value="relevance">Relevância</option>
+                <option value="price-asc">Menor Preço</option>
+                <option value="price-desc">Maior Preço</option>
+            </select>
+        </div>
+        <div class="filter-item">
+            <span>Categorias:</span>
+            <select class="category-select">
+                <option value="all">Todas</option>
+                <option value="camisetas">Camisetas</option>
+                <option value="calcas">Calças</option>
+                <option value="acessorios">Acessórios</option>
+            </select>
+        </div>
+    </div>
+</main>
+
+    <section class="products-section"> <!-- Produto 1 -->
+        <div class="products-grid">
+          <div class="product-card">
+    <div class="product-image-container">
+        <img src="https://lojamaxtitanium.vtexassets.com/arquivos/ids/158234-1366-0/MAX-ALLDAY-PRE-WORKOUT-1.jpg?v=638647665939700000" alt="Tênis Urbano" class="product-image">
+        <div class="overlay"></div>
+    </div>
+    
+    <div class="product-details">
+                <p class="installments">R$ 99,90 em até 3x de R$ 33,30 (sem juros)</p>
+                <h3 class="product-name">All Day Jorlan Vieira pote 300g</h3>
+                <p class="product-price">R$ 94,91 à vista no PIX </p>
+                
+    
+        <button class="quick-add">Adicionar ao Carrinho</button>
+    </div>
+</div>
+
+       <div class="product-card"> <!-- Produto 2 -->
+    <div class="product-image-container">
+        <img src="https://lojamaxtitanium.vtexassets.com/arquivos/ids/159389-1366-0/MAX-PROMOPACK-VEGAS-1-FRUTAS.jpg?v=638919227189600000" alt="Tênis Urbano" class="product-image">
+        <div class="overlay"></div>
+    </div>
+    
+    <div class="product-details">
+                <p class="installments">R$ 129,00 em até 4x de R$ 32,25</p>
+                <h3 class="product-name">Promopack Las Vegas Special Edition - Creatina 500g + Pré-treino Hórus</h3>
+                <p class="product-price">R$ 125,13 à vista no PIX</p>
+                
+        
+        <button class="quick-add">Adicionar ao Carrinho</button>
+    </div>
+</div>
+            
+         <div class="product-card"> <!-- Produto 3 -->
+    <div class="product-image-container">
+        <img src="https://integralmedica.vtexassets.com/arquivos/ids/168064-1600-auto?v=638792220093170000&width=1600&height=auto&aspect=true" alt="Tênis Urbano" class="product-image">
+        <div class="overlay"></div>
+    </div>
+    
+    <div class="product-details">
+                <p class="installments">Por R$ 120,26 em até 2 de R$ 60,13 (sem juros)</p>
+                <h3 class="product-name">Protein Crisp Bar Ovomaltine® 12 und</h3>
+                <p class="product-price">R$ 120,26 à vista no PIX</p>
+        
+        <button class="quick-add">Adicionar ao Carrinho</button>
+    </div>
+</div>
+<!-- Produto 4 -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="product-image-container">
+                <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/03/15324792251-0f75b983fcc3b5186d00d0161b3de0a0.png" 
+                     alt="100% Whey Refil 900G" class="product-image">
+              </div>
+              <div class="product-details">
+                <p class="installments">Até 5x de R$ 59,20</p>
+                <h3 class="product-name">100% Whey Protein (909g) Optimum Nutrition</h3>
+                <p class="product-price">R$ 296,00</p>
+                <button class="quick-add">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 5 -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="product-image-container">
+                <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/03/15323102547-top-whey-3w-max-titanium-900g-performance-baunilha-1.webp" 
+                     alt="Top Whey 3W Performance 1,8Kg" class="product-image">
+              </div>
+              <div class="product-details">
+                <p class="installments">Até 3x de R$ 53,97</p>
+                <h3 class="product-name">Top Whey 3w (900g) Max Titanium</h3>
+                <p class="product-price">R$ 161,91</p>
+                <button class="quick-add">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 6 -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="product-image-container">
+                <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/07/15348995216-486e97ac4d64bff248c726a9b62dc352.png" 
+                     alt="Creatina Max Titanium 300g" class="product-image">
+              </div>
+              <div class="product-details">
+                <p class="installments">Até 2x de R$ 55,15</p>
+                <h3 class="product-name">Super Gainers (3000g) Max Titanium</h3>
+                <p class="product-price">R$ 110,30</p>
+                <button class="quick-add">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 7 -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="product-image-container">
+                <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/07/15325806192-18393-3762-0-2-10.png" 
+                     alt="Mass Titanium 3Kg" class="product-image">
+              </div>
+              <div class="product-details">
+                <p class="installments">Até 6x de R$ 54,32</p>
+                <h3 class="product-name">Top Whey 3W + Performance (1800g) Max Titanium</h3>
+                <p class="product-price">R$ 325,90</p>
+                <button class="quick-add">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 8 -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="product-image-container">
+                <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/07/15349150816-d25b2375ca9e9dae37e58c3c2c3caba0.png" 
+                     alt="100% Whey Refil 900G" class="product-image">
+              </div>
+              <div class="product-details">
+                <p class="installments">Até 6x de R$ 118,40</p>
+                <h3 class="product-name">100% Whey Gold Isolate (1320g) Optimum Nutrition</h3>
+                <p class="product-price">R$ 710,40</p>
+                <button class="quick-add">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 9 -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="product-image-container">
+                <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/07/15349364419-2beb3e449c2d95cc8e593cd2f7691a84.png" 
+                     alt="Top Whey Premium 1,8Kg" class="product-image">
+              </div>
+              <div class="product-details">
+                <p class="installments">Até 6x de R$ 111,13</p>
+                <h3 class="product-name">100% Whey Protein (2270g) Optimum Nutrition</h3>
+                <p class="product-price">R$ 666,80</p>
+                <button class="quick-add">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 10 -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="product-image-container">
+                <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/07/15349107353-618f92717ccc032984d5d827b8ebd0de.png" 
+                     alt="Creatina Hardcore 300g" class="product-image">
+              </div>
+              <div class="product-details">
+                <p class="installments">Até 1x de R$ 55,99</p>
+                <h3 class="product-name">ZMA (90caps) Max Titanium</h3>
+                <p class="product-price">R$ 87,63</p>
+                <button class="quick-add">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 11 -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="product-image-container">
+                <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/08/15370640341-iso-whey-max-titanium-900g-baunilha-1.webp" 
+                     alt="Mass Titanium 4Kg" class="product-image">
+              </div>
+              <div class="product-details">
+                <p class="installments">Até 6x de R$ 51,51</p>
+                <h3 class="product-name">Iso Whey (900g) Max Titanium</h3>
+                <p class="product-price">R$ 309,06</p>
+                <button class="quick-add">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 12 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/07/15348076311-cd06fc7caac4cfa8cab83d0afebbc4e1.png" 
+                   alt="100% Whey Refil 900G" class="product-image">
+            </div>
+            <div class="product-details">
+              <p class="old-price">De: R$ 299,90</p>
+              <p class="pix-price">Por <span>R$ 256,90</span> no PIX</p>
+              <p class="installments">ou R$ 299,90 em até 5x de <span>R$ 59,98</span></p>
+              <h3 class="product-name">Whey 100% Pure (1800g) Integralmedica</h3>
+              <button class="quick-add">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 13 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/03/15314366038-166564-1600-auto.png" 
+                   alt="Top Whey 3W Performance 1,8Kg" class="product-image">
+            </div>
+            <div class="product-details">
+              <p class="old-price">De: R$ 189,90</p>
+              <p class="pix-price">Por <span>R$ 165,54</span> no PIX</p>
+              <p class="installments">ou R$ 189,90 em até 3x de <span>R$ 63,30</span></p>
+              <h3 class="product-name">Carnibol Darkness (900G) Integralmedica</h3>
+              <button class="quick-add">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 14 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/07/15348116756-167958-1600-auto.png" 
+                   alt="Creatina Max Titanium 300g" class="product-image">
+            </div>
+            <div class="product-details">
+              <p class="old-price">De: R$ 159,90</p>
+              <p class="pix-price">Por <span>R$ 139,90</span> no PIX</p>
+              <p class="installments">ou R$ 159,90 em até 2x de <span>R$ 79,95</span></p>
+              <h3 class="product-name">Whey 100% Pure (refil-900g) Integralmedica</h3>
+              <button class="quick-add">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 15 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/03/15329039646-top-whey-3w-max-titanium-900g-sabor-sorvete-frutas-1.webp" 
+                   alt="Mass Titanium 3Kg" class="product-image">
+            </div>
+            <div class="product-details">
+              <p class="old-price">De: R$ 189,90</p>
+              <p class="pix-price">Por <span>R$ 165,79</span> no PIX</p>
+              <p class="installments">ou R$ 189,90 em até 3x de <span>R$ 63,30</span></p>
+              <h3 class="product-name">Top Whey 3w +Sabor (900g) Max Titanium</h3>
+              <button class="quick-add">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 16 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/07/15350808577-31a81d77df847cc518451220d200c621.webp" 
+                   alt="100% Whey Refil 900G" class="product-image">
+            </div>
+            <div class="product-details">
+              <p class="old-price">De: R$ 159,90</p>
+              <p class="pix-price">Por <span>R$ 140,40</span> no PIX</p>
+              <p class="installments">ou R$ 159,90 em até 2x de <span>R$ 79,95</span></p>
+              <h3 class="product-name">100% Whey Max Titanium x DR Peanut (900g) Max Titanium</h3>
+              <button class="quick-add">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 17 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/07/15349846860-f2d512f0e15fca0e933a0ef52099104f.png" 
+                   alt="Top Whey Premium 1,8Kg" class="product-image">
+            </div>
+            <div class="product-details">
+              <p class="old-price">De: R$ 219,90</p>
+              <p class="pix-price">Por <span>R$ 193,47</span> no PIX</p>
+              <p class="installments">ou R$ 219,90 em até 3x de <span>R$ 73,30</span></p>
+              <h3 class="product-name">100% Pure Whey Sem Lactose (900g) Probiotica</h3>
+              <button class="quick-add">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 18 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/07/15349107353-618f92717ccc032984d5d827b8ebd0de.png" 
+                   alt="Creatina Hardcore 300g" class="product-image">
+            </div>
+            <div class="product-details">
+              <p class="old-price">De: R$ 129,90</p>
+              <p class="pix-price">Por <span>R$ 86,46</span> no PIX</p>
+              <p class="installments">ou R$ 129,90 em até 2x de <span>R$ 64,95</span></p>
+              <h3 class="product-name">Power Protein Bar (12unid-41g) Max Titanium – DARK CHOCOLATE TRUFFLE</h3>
+              <button class="quick-add">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 18 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="/IMG/POWER-PROTEIN-BAR-CHOCOLATE-TRUFLE-.png" 
+                   alt="Creatina Hardcore 300g" class="product-image">
+            </div>
+            <div class="product-details">
+              <p class="old-price">De: R$ 129,90</p>
+              <p class="pix-price">Por <span>R$ 86,46</span> no PIX</p>
+              <p class="installments">ou R$ 129,90 em até 2x de <span>R$ 64,95</span></p>
+              <h3 class="product-name">Power Protein Bar (12unid-41g) Max Titanium – DARK CHOCOLATE TRUFFLE</h3>
+              <button class="quick-add">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+
+
+            <div class="product-card">
+    <div class="product-image-container">
+        <img src="https://images.unsplash.com/photo-1542291026-79eef4c76786?q=80&w=2070&auto=format&fit=crop" alt="Tênis Urbano" class="product-image">
+        <div class="overlay"></div>
+    </div>
+    
+    <div class="product-details">
+        <h3 class="product-name">Tênis Urbano</h3>
+        <p class="product-price">R$ 189,90</p>
+        
+        <button class="quick-add">Adicionar ao Carrinho</button>
+    </div>
+</div>
+
+            <div class="product-card">
+    <div class="product-image-container">
+        <img src="https://images.unsplash.com/photo-1542291026-79eef4c76786?q=80&w=2070&auto=format&fit=crop" alt="Tênis Urbano" class="product-image">
+        <div class="overlay"></div>
+    </div>
+    
+    <div class="product-details">
+        <h3 class="product-name">Tênis Urbano</h3>
+        <p class="product-price">R$ 189,90</p>
+        
+        <button class="quick-add">Adicionar ao Carrinho</button>
+    </div>
+</div>
+<div class="product-card">
+    <div class="product-image-container">
+        <img src="https://images.unsplash.com/photo-1542291026-79eef4c76786?q=80&w=2070&auto=format&fit=crop" alt="Tênis Urbano" class="product-image">
+        <div class="overlay"></div>
+    </div>
+    
+    <div class="product-details">
+        <h3 class="product-name">Tênis Urbano</h3>
+        <p class="product-price">R$ 189,90</p>
+        
+        <button class="quick-add">Adicionar ao Carrinho</button>
+    </div>
+</div>
+
+      <div class="product-card">
+    <div class="product-image-container">
+        <img src="https://images.unsplash.com/photo-1542291026-79eef4c76786?q=80&w=2070&auto=format&fit=crop" alt="Tênis Urbano" class="product-image">
+        <div class="overlay"></div>
+    </div>
+    
+    <div class="product-details">
+        <h3 class="product-name">Tênis Urbano</h3>
+        <p class="product-price">R$ 189,90</p>
+        
+        <button class="quick-add">Adicionar ao Carrinho</button>
+    </div>
+</div>
+            
+            </div>
+        
+    </section>
+</main>

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja - Produtos em Destaque</title>
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- CSS do carrossel -->
+  <link rel="stylesheet" href="carousel.css">
+
+  <!-- Font Awesome + Swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="#">SuaMarca</a>
+    </div>
+
+    <form class="search-form">
+      <input type="text" placeholder="Pesquisar produtos...">
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </form>
+
+    <nav class="nav-links">
+      <a href="index.html">Início</a>
+      <a href="produto-detalhe.html">Produtos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    
+    <div class="user-actions">
+      <a href="#login" class="user-action-link">
+        <i class="fas fa-user-circle"></i>
+        <span class="action-text">Login</span>
+      </a>
+      <a href="#carrinho" class="user-action-link bag-link">
+        <i class="fas fa-shopping-bag"></i>
+        <span class="action-text">Sacola</span>
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+    
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+
+
+
+
+<!-- Introdução Marcas -->
+<section class="brands-intro">
+  <h2>AS MELHORES MARCAS DO MERCADO</h2>
+  <p>Trabalhamos apenas com fabricantes confiáveis para garantir qualidade, segurança e resultados de verdade.</p>
+</section>
+
+<section class="brands-slider">
+  <div class="brands-track">
+    <img src="https://logodownload.org/wp-content/uploads/2021/04/optimum-nutrition-logo-0.png" alt="Optimum Nutrition">
+    <img src="https://musclefoodsusa.com/wp-content/uploads/2020/01/Isopure-Logo.png" alt="Isopure">
+    <img src="https://cdn.awsli.com.br/413/413192/logo/universal_logo_1_8_2_3_2_1_1_-_copia_6__1-1--ln5osxapgr.png" alt="Universal">
+    <img src="https://images.seeklogo.com/logo-png/25/2/max-titanium-logo-png_seeklogo-257443.png" alt="Max Titanium">
+    <img src="https://images.seeklogo.com/logo-png/2/2/bsn-logo-png_seeklogo-23069.png" alt="BSN">
+    <img src="https://iconape.com/wp-content/files/iz/243040/svg/dymatize-seeklogo.com.svg" alt="Dymatize">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Logo_Integralm%C3%A9dica_Suplementos_Nutricionais.png/1200px-Logo_Integralm%C3%A9dica_Suplementos_Nutricionais.png" alt="Integralmedica">
+    <!-- duplicando para loop infinito -->
+    <img src="https://logodownload.org/wp-content/uploads/2021/04/optimum-nutrition-logo-0.png" alt="Optimum Nutrition">
+    <img src="https://musclefoodsusa.com/wp-content/uploads/2020/01/Isopure-Logo.png" alt="Isopure">
+    <img src="https://cdn.awsli.com.br/413/413192/logo/universal_logo_1_8_2_3_2_1_1_-_copia_6__1-1--ln5osxapgr.png" alt="Universal">
+    <img src="https://images.seeklogo.com/logo-png/25/2/max-titanium-logo-png_seeklogo-257443.png" alt="Max Titanium">
+    <img src="https://images.seeklogo.com/logo-png/2/2/bsn-logo-png_seeklogo-23069.png" alt="BSN">
+    <img src="https://iconape.com/wp-content/files/iz/243040/svg/dymatize-seeklogo.com.svg" alt="Dymatize">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Logo_Integralm%C3%A9dica_Suplementos_Nutricionais.png/1200px-Logo_Integralm%C3%A9dica_Suplementos_Nutricionais.png" alt="Integralmedica">
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+  <!-- Banner -->
+  <div class="banner">
+  <img src="/IMG/Design sem nome (1).png" 
+       alt="Banner Produtos" 
+       class="banner-img">
+</div>
+
+
+
+
+  <!-- Destaques abaixo do banner -->
+  <section class="highlights">
+    <div class="highlight-item">
+      <i class="fas fa-truck-fast"></i>
+      <p>Frete Grátis em Todo o Brasil</p>
+    </div>
+    <div class="highlight-item">
+      <i class="fas fa-shield-alt"></i>
+      <p>Garantia de Originalidade</p>
+    </div>
+    <div class="highlight-item">
+      <i class="fas fa-credit-card"></i>
+      <p>Parcele em até 6x sem juros</p>
+    </div>
+    <div class="highlight-item">
+      <i class="fas fa-money-bill-wave"></i>
+      <p>5% OFF no PIX e Boleto</p>
+    </div>
+  </section>
+
+  <!-- Produtos em Destaque (Carrossel) -->
+  <main class="main-content">
+    <section class="products-section">
+      <h2 class="section-title">PRODUTOS EM DESTAQUE</h2>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <!-- Produto 1 -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="product-image-container">
+                <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/03/15324792251-0f75b983fcc3b5186d00d0161b3de0a0.png" 
+                     alt="100% Whey Refil 900G" class="product-image">
+              </div>
+              <div class="product-details">
+                <p class="installments">Até 5x de R$ 59,20</p>
+                <h3 class="product-name">100% Whey Protein (909g) Optimum Nutrition</h3>
+                <p class="product-price">R$ 296,00</p>
+                <button class="quick-add">VER DETALHES</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 2 -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="product-image-container">
+                <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/03/15323102547-top-whey-3w-max-titanium-900g-performance-baunilha-1.webp" 
+                     alt="Top Whey 3W Performance 1,8Kg" class="product-image">
+              </div>
+              <div class="product-details">
+                <p class="installments">Até 3x de R$ 53,97</p>
+                <h3 class="product-name">Top Whey 3w (900g) Max Titanium</h3>
+                <p class="product-price">R$ 161,91</p>
+                <button class="quick-add">VER DETALHES</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 3 -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="product-image-container">
+                <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/07/15348995216-486e97ac4d64bff248c726a9b62dc352.png" 
+                     alt="Creatina Max Titanium 300g" class="product-image">
+              </div>
+              <div class="product-details">
+                <p class="installments">Até 2x de R$ 55,15</p>
+                <h3 class="product-name">Super Gainers (3000g) Max Titanium</h3>
+                <p class="product-price">R$ 110,30</p>
+                <button class="quick-add">VER DETALHES</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 4 -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="product-image-container">
+                <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/07/15325806192-18393-3762-0-2-10.png" 
+                     alt="Mass Titanium 3Kg" class="product-image">
+              </div>
+              <div class="product-details">
+                <p class="installments">Até 6x de R$ 54,32</p>
+                <h3 class="product-name">Top Whey 3W + Performance (1800g) Max Titanium</h3>
+                <p class="product-price">R$ 325,90</p>
+                <button class="quick-add">VER DETALHES</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 5 -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="product-image-container">
+                <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/07/15349150816-d25b2375ca9e9dae37e58c3c2c3caba0.png" 
+                     alt="100% Whey Refil 900G" class="product-image">
+              </div>
+              <div class="product-details">
+                <p class="installments">Até 6x de R$ 118,40</p>
+                <h3 class="product-name">100% Whey Gold Isolate (1320g) Optimum Nutrition</h3>
+                <p class="product-price">R$ 710,40</p>
+                <button class="quick-add">VER DETALHES</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 6 -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="product-image-container">
+                <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/07/15349364419-2beb3e449c2d95cc8e593cd2f7691a84.png" 
+                     alt="Top Whey Premium 1,8Kg" class="product-image">
+              </div>
+              <div class="product-details">
+                <p class="installments">Até 6x de R$ 111,13</p>
+                <h3 class="product-name">100% Whey Protein (2270g) Optimum Nutrition</h3>
+                <p class="product-price">R$ 666,80</p>
+                <button class="quick-add">VER DETALHES</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 7 -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="product-image-container">
+                <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/07/15349107353-618f92717ccc032984d5d827b8ebd0de.png" 
+                     alt="Creatina Hardcore 300g" class="product-image">
+              </div>
+              <div class="product-details">
+                <p class="installments">Até 1x de R$ 55,99</p>
+                <h3 class="product-name">ZMA (90caps) Max Titanium</h3>
+                <p class="product-price">R$ 87,63</p>
+                <button class="quick-add">VER DETALHES</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 8 -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="product-image-container">
+                <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/08/15370640341-iso-whey-max-titanium-900g-baunilha-1.webp" 
+                     alt="Mass Titanium 4Kg" class="product-image">
+              </div>
+              <div class="product-details">
+                <p class="installments">Até 6x de R$ 51,51</p>
+                <h3 class="product-name">Iso Whey (900g) Max Titanium</h3>
+                <p class="product-price">R$ 309,06</p>
+                <button class="quick-add">VER DETALHES</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Botões e paginação -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  </main>
+
+<!-- Botão Ver Mais -->
+<div class="ver-mais-container">
+  <a href="produto-detalhe.html" class="ver-mais-btn">+ Ver mais</a>
+</div>
+
+
+
+  <!-- JS do Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,       // Mostra 4 produtos de cada vez
+      slidesPerGroup: 4,      // Passa 4 em 4
+      spaceBetween: 20,       // Espaço entre os cards
+      loop: true,             // Loop infinito
+      loopFillGroupWithBlank: true, // Preenche se faltar slides
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+  <!-- OFERTAS IMBATÍVEIS (Carrossel) -->
+<main class="main-content">
+  <section class="products-section">
+    <h2 class="section-title">OFERTAS IMBATÍVEIS</h2>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Produto 1 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/07/15348076311-cd06fc7caac4cfa8cab83d0afebbc4e1.png" 
+                   alt="100% Whey Refil 900G" class="product-image">
+            </div>
+            <div class="product-details">
+              <p class="old-price">De: R$ 299,90</p>
+              <p class="pix-price">Por <span>R$ 256,90</span> no PIX</p>
+              <p class="installments">ou R$ 299,90 em até 5x de <span>R$ 59,98</span></p>
+              <h3 class="product-name">Whey 100% Pure (1800g) Integralmedica</h3>
+              <button class="quick-add">VER DETALHES</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/03/15314366038-166564-1600-auto.png" 
+                   alt="Top Whey 3W Performance 1,8Kg" class="product-image">
+            </div>
+            <div class="product-details">
+              <p class="old-price">De: R$ 189,90</p>
+              <p class="pix-price">Por <span>R$ 165,54</span> no PIX</p>
+              <p class="installments">ou R$ 189,90 em até 3x de <span>R$ 63,30</span></p>
+              <h3 class="product-name">Carnibol Darkness (900G) Integralmedica</h3>
+              <button class="quick-add">VER DETALHES</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/07/15348116756-167958-1600-auto.png" 
+                   alt="Creatina Max Titanium 300g" class="product-image">
+            </div>
+            <div class="product-details">
+              <p class="old-price">De: R$ 159,90</p>
+              <p class="pix-price">Por <span>R$ 139,90</span> no PIX</p>
+              <p class="installments">ou R$ 159,90 em até 2x de <span>R$ 79,95</span></p>
+              <h3 class="product-name">Whey 100% Pure (refil-900g) Integralmedica</h3>
+              <button class="quick-add">VER DETALHES</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/03/15329039646-top-whey-3w-max-titanium-900g-sabor-sorvete-frutas-1.webp" 
+                   alt="Mass Titanium 3Kg" class="product-image">
+            </div>
+            <div class="product-details">
+              <p class="old-price">De: R$ 189,90</p>
+              <p class="pix-price">Por <span>R$ 165,79</span> no PIX</p>
+              <p class="installments">ou R$ 189,90 em até 3x de <span>R$ 63,30</span></p>
+              <h3 class="product-name">Top Whey 3w +Sabor (900g) Max Titanium</h3>
+              <button class="quick-add">VER DETALHES</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 5 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/07/15350808577-31a81d77df847cc518451220d200c621.webp" 
+                   alt="100% Whey Refil 900G" class="product-image">
+            </div>
+            <div class="product-details">
+              <p class="old-price">De: R$ 159,90</p>
+              <p class="pix-price">Por <span>R$ 140,40</span> no PIX</p>
+              <p class="installments">ou R$ 159,90 em até 2x de <span>R$ 79,95</span></p>
+              <h3 class="product-name">100% Whey Max Titanium x DR Peanut (900g) Max Titanium</h3>
+              <button class="quick-add">VER DETALHES</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 6 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/07/15349846860-f2d512f0e15fca0e933a0ef52099104f.png" 
+                   alt="Top Whey Premium 1,8Kg" class="product-image">
+            </div>
+            <div class="product-details">
+              <p class="old-price">De: R$ 219,90</p>
+              <p class="pix-price">Por <span>R$ 193,47</span> no PIX</p>
+              <p class="installments">ou R$ 219,90 em até 3x de <span>R$ 73,30</span></p>
+              <h3 class="product-name">100% Pure Whey Sem Lactose (900g) Probiotica</h3>
+              <button class="quick-add">VER DETALHES</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 7 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/07/15349107353-618f92717ccc032984d5d827b8ebd0de.png" 
+                   alt="Creatina Hardcore 300g" class="product-image">
+            </div>
+            <div class="product-details">
+              <p class="old-price">De: R$ 129,90</p>
+              <p class="pix-price">Por <span>R$ 86,46</span> no PIX</p>
+              <p class="installments">ou R$ 129,90 em até 2x de <span>R$ 64,95</span></p>
+              <h3 class="product-name">Power Protein Bar (12unid-41g) Max Titanium – DARK CHOCOLATE TRUFFLE</h3>
+              <button class="quick-add">VER DETALHES</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 8 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="https://www.madrugaosuplementos.com.br/wp-content/uploads/2025/08/15341129503-166727-1600-auto-10.png" 
+                   alt="Mass Titanium 4Kg" class="product-image">
+            </div>
+            <div class="product-details">
+              <p class="old-price">De: R$ 359,90</p>
+              <p class="pix-price">Por <span>R$ 309,06</span> no PIX</p>
+              <p class="installments">ou R$ 359,90 em até 6x de <span>R$ 59,98</span></p>
+              <h3 class="product-name">Evora PW (150g) Integralmedica – Frutas Amarelas</h3>
+              <button class="quick-add">VER DETALHES</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Botões e paginação AGORA dentro do Swiper -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      
+    </div>
+  </section>
+</main>
+
+
+
+<!-- CSS para personalizar as setas -->
+<style>
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #e63946; /* Vermelho do botão VER DETALHES */
+  }
+</style>
+
+
+<!-- JS do Swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,       // Mostra 4 produtos de cada vez
+    slidesPerGroup: 4,      // Passa 4 em 4
+    spaceBetween: 20,       // Espaço entre os cards
+    loop: true,             // Loop infinito
+    loopFillGroupWithBlank: true, // Preenche se faltar slides
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="main-footer">
+    <div class="footer-top">
+        <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-middle">
+        <div class="container">
+            <div class="footer-column logo-column">
+                <img src="https://via.placeholder.com/200x50.png?text=Logo+Madrugão" alt="Madrugão Suplementos Logo" class="footer-logo">
+            </div>
+
+            <div class="footer-column">
+                <h4>Horário de atendimento SAC</h4>
+                <p>Seg à Sex - das 09h - 18h</p>
+                <p>Email: <a href="mailto:sac@nutrisuplementos.com.br">sac@nutrisuplementos.com.br</a></p>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Ajuda e Suporte</h4>
+                <ul>
+                    <li><a href="#">Como Comprar</a></li>
+                    <li><a href="#">Entregas</a></li>
+                    <li><a href="#">Pagamentos</a></li>
+                    <li><a href="#">Trocas e devoluções</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Fale conosco</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Formas de Pagamento</h4>
+                <div class="payment-methods">
+                    <img src="https://pngimg.com/uploads/visa/visa_PNG4.png" alt="Visa">
+                    <img src="https://th.bing.com/th/id/R.2cbbce68698d9b4c4138306b6090548e?rik=5MO6n51wZDMNTA&pid=ImgRaw&r=0" alt="Mastercard">
+                    <img src="https://logosmarcas.net/wp-content/uploads/2020/11/American-Express-Emblema.png" alt="American Express">
+                    <img src="https://logos-world.net/wp-content/uploads/2023/02/Elo-Logo-2012-500x281.png" alt="Elo">
+                    <img src="https://pngimg.com/d/paypal_PNG7.png" alt="PayPal">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

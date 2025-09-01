@@ -1,0 +1,516 @@
+/* ==================================== */
+/* ANIMAÇÕES                            */
+/* ==================================== */
+
+/* Definição da animação de "bounce" (salto) */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8); /* Começa um pouco menor */
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.05); /* Salta um pouco acima do tamanho normal */
+        opacity: 1;
+    }
+    80% {
+        transform: scale(0.95); /* Volta um pouco */
+    }
+    100% {
+        transform: scale(1); /* Posição final */
+        opacity: 1;
+    }
+}
+
+/* Aplica a animação ao título da seção quando a página carrega */
+.products-page-title {
+    /* (Mantenha os estilos existentes do .section-title) */
+    animation: bounceIn 1s ease-out forwards; /* Nome da animação, duração, curva de velocidade, mantém o estado final */
+    animation-delay: 0.2s; /* Um pequeno atraso para a animação começar */
+}
+
+
+
+
+
+/* Estilos Gerais e Reset */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #c8d3e6); /* Gradiente suave */
+    min-height: 100vh;
+}
+
+
+/* ====== NAVBAR ====== */
+.navbar {
+    background: rgba(255, 255, 255, 0.2); /* semi-transparente */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+
+.navbar > * {
+    margin: 0 1rem;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.navbar .nav-links a {
+    background: rgba(255, 255, 255, 0.6); /* fundo branco translúcido */
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 0.4rem 1rem;
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    background: rgba(255, 255, 255, 0.8); /* hover igual pesquisa */
+    color: #007BFF; /* mantém destaque azul no hover */
+}
+
+/* ====== BARRA DE PESQUISA ====== */
+.search-form {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 0.4rem 0.8rem;
+    width: 30%;
+    max-width: 400px;
+    flex-grow: 1;
+}
+
+.search-form input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1rem;
+    flex-grow: 1;
+}
+
+.search-form button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+}
+
+.search-form button:hover {
+    color: #007BFF;
+}
+
+/* ====== AÇÕES DO USUÁRIO ====== */
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.user-action-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.user-action-link:hover {
+    color: #007BFF;
+}
+
+.user-action-link i {
+    font-size: 1.2rem;
+}
+
+.action-text {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.bag-link {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background-color: #ff4500;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ====== MENU MOBILE ====== */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.2rem;
+    }
+
+    .logo, .menu-toggle {
+        order: 1;
+    }
+
+    .search-form {
+        order: 3;
+        width: 100%;
+        margin: 1rem 0;
+    }
+    
+    .nav-links {
+        order: 4;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #fff;
+        border-top: 1px solid #eee;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+
+    .user-actions {
+        order: 2;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    
+    .action-text {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 1.5rem;
+        top: 1.2rem;
+    }
+}
+
+
+
+
+
+/* Estilos para a Seção Principal */
+.main-content {
+    padding: 3rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.products-section {
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #4a4a4a;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+}
+
+/* Grade de Produtos */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+    justify-content: center;
+}
+
+/* Card de Produto */
+.product-card {
+    /* Fundo branco com 40% de transparência */
+    background-color: rgba(255, 255, 255, 0.4); 
+    
+    /* Aplica o desfoque nos elementos que estão atrás do card */
+    backdrop-filter: blur(10px); 
+    
+    /* Suporte para navegadores WebKit (Safari) */
+    -webkit-backdrop-filter: blur(10px); 
+    
+    border-radius: 12px;
+    
+    /* Borda sutil e transparente para efeito de vidro */
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    
+    /* Sombra para profundidade */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); 
+    
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
+}
+
+/* Contêiner da Imagem e Overlay */
+.product-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 320px; /* Altura fixa para as imagens */
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.05); /* Zoom sutil na imagem */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); 
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.product-card:hover .overlay {
+    opacity: 1;
+}
+
+.quick-add {
+    background: linear-gradient(135deg, #57e24a, #50c9ce); /* mesmo gradiente do .btn */
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 12px; /* igual ao botão .btn */
+    cursor: pointer;
+    text-transform: uppercase;
+    opacity: 1; /* sempre visível */
+    transform: translateY(0);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(74,144,226,0.3); /* efeito sutil */
+}
+
+.quick-add:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(74,144,226,0.4); /* mesmo efeito do .btn:hover */
+}
+
+.product-card:hover .quick-add {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.quick-add:hover {
+    background-color: #000;
+}
+
+/* Detalhes do Produto */
+.product-details {
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.product-name {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #fa2424;
+}
+
+@media (max-width: 600px) {
+    .products-grid {
+        gap: 2rem;
+    }
+}
+
+
+
+
+
+
+
+/* PESQUISA POR CATEGORIA */
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f9f9fb;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.page-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+/* ---- Barra de filtros com efeito blur ---- */
+.filters-bar {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 15px 25px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.filter-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* ---- Selects com estilo fosco ---- */
+select {
+    padding: 10px 14px;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 12px;
+    font-size: 0.95rem;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    border-color: #4a90e2;
+    box-shadow: 0 4px 10px rgba(74,144,226,0.2);
+}
+
+select:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74,144,226,0.25);
+}
+
+
+
+
+
+
+
+
+/* Animação de entrada (fade + slide) */
+@keyframes fadeSlideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.filters-bar {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 15px 25px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+
+    /* animação ao carregar */
+    animation: fadeSlideDown 0.8s ease forwards;
+}
+
+/* Efeito hover na barra inteira */
+.filters-bar:hover {
+    box-shadow: 0 12px 30px rgba(74,144,226,0.25);
+    transform: scale(1.01);
+    transition: all 0.4s ease;
+}
+
+/* Selects com micro animação no foco */
+select:focus {
+    outline: none;
+    transform: scale(1.05);
+    transition: all 0.25s ease;
+    border-color: #4a90e2;
+    box-shadow: 0 0 12px rgba(74,144,226,0.4);
+}
+
